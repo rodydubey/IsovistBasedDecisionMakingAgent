@@ -56,6 +56,18 @@ namespace DefaultNamespace {
             return area;
         }
 
+        public Vector3 CalculateSumOfRays()
+        {
+            Vector3 sum = new Vector3();
+            for (int i = 0; i < isovistPolygon.Count - 1; i++)
+            {
+                sum += isovistPolygon[i];
+            }
+            sum.Normalize();
+
+            return sum;
+        }
+
         private Vector2 CalculateCentroid() {
             var sumY = 0f;
             var sumX = 0f;
@@ -146,6 +158,9 @@ namespace DefaultNamespace {
             cachedMeasures[IsovistMeasures.Openness] = CalculateOpenness();
             cachedMeasures[IsovistMeasures.Jaggedness] = CalculateJaggedness();
             cachedMeasures[IsovistMeasures.Occlusivity] = CalculateOcclusivity();
+            cachedMeasures[IsovistMeasures.WallSumX] = CalculateSumOfRays().x;
+            cachedMeasures[IsovistMeasures.WallSumZ] = CalculateSumOfRays().z;
+
             return cachedMeasures;
         }
         
@@ -165,7 +180,9 @@ namespace DefaultNamespace {
             Drift,
             Openness,
             Jaggedness,
-            Occlusivity
+            Occlusivity,
+            WallSumX,
+            WallSumZ
         }
     }
 }

@@ -18,6 +18,10 @@ public class IsovistViewer : MonoBehaviour {
     [SerializeField] private float openness;
     [SerializeField] private float jaggedness;
     [SerializeField] private float occlusivity;
+    //
+    [SerializeField] private float wallSumX;
+    [SerializeField] private float wallSumZ;
+    //
 
     [SerializeField] private Isovist isovist;
     [SerializeField] public bool shouldDraw;
@@ -25,6 +29,9 @@ public class IsovistViewer : MonoBehaviour {
     private GameObject centroidMarker;
 
     public float Area => area;
+    //
+    private bool wallDistanceNavModel;
+    //
 
     private void Start() {
         lr = GetComponent<LineRenderer>();
@@ -43,6 +50,13 @@ public class IsovistViewer : MonoBehaviour {
     public void SetIsovist(Isovist isovist) {
         this.isovist = isovist;
     }
+    
+    //
+    public void setWallDistanceModel(bool state)
+    {
+        wallDistanceNavModel = state;
+    }
+    //
 
     private void LateUpdate() {
         var dict = isovist.CalculateIsovistMeasures();
@@ -58,7 +72,10 @@ public class IsovistViewer : MonoBehaviour {
         openness = dict[Isovist.IsovistMeasures.Openness];
         jaggedness = dict[Isovist.IsovistMeasures.Jaggedness];
         occlusivity = dict[Isovist.IsovistMeasures.Occlusivity];
-
+        //
+        wallSumX = dict[Isovist.IsovistMeasures.WallSumX];
+        wallSumZ = dict[Isovist.IsovistMeasures.WallSumZ];
+        //
         if (shouldDraw) {
             DrawIsovist();
         } 
@@ -76,6 +93,11 @@ public class IsovistViewer : MonoBehaviour {
 
     private void DrawCentroid() {
         var offset = transform.position;
-        centroidMarker.transform.position = new Vector3(centroidX, 0f, centroidY) + offset;
+        //
+        if (wallDistanceNavModel)
+            centroidMarker.transform.position = 4 * new Vector3(wallSumX, 0f, wallSumZ) + offset;
+        else
+        //
+            centroidMarker.transform.position = new Vector3(centroidX, 0f, centroidY) + offset;
     }
 }

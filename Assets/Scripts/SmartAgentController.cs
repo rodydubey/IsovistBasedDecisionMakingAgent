@@ -26,6 +26,10 @@ public class SmartAgentController : MonoBehaviour {
     public FieldOfView fov;
     public IsovistViewer isov;
 
+    //
+    public bool wallDistanceNavModel = false;
+    //
+
     private int framesStuck;
     public void Start() {
         coords = new List<TimeStampedCoords>();
@@ -46,6 +50,7 @@ public class SmartAgentController : MonoBehaviour {
     }
 
     protected virtual void Update() {
+        
         if (GetComponent<MoveTo>().Pathfinding) return;
         if (midPt == null) return;
 

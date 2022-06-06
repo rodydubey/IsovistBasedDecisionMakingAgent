@@ -5,6 +5,7 @@ public class PlayerController : SmartAgentController {
     [SerializeField] private Rigidbody playerRb;
     [SerializeField] private float maxVelocityChange = 10.0f;
 
+
     private Camera mainCamera;
     
     private bool plyrCtrl = true;
@@ -20,6 +21,7 @@ public class PlayerController : SmartAgentController {
     }
 
     protected override void Update() {
+        isov.setWallDistanceModel(wallDistanceNavModel);
         if (Input.GetKeyDown(KeyCode.H)) {
             var g = GameObject.Find("GridZero");
             var curRenderStatus = g.GetComponentInChildren<Renderer>().enabled;
