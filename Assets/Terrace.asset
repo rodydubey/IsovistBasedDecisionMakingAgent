@@ -1,0 +1,533 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33aff84f18e14b06b39d986903222cfd, type: 3}
+  m_Name: Terrace
+  m_EditorClassIdentifier: 
+  signJson: {fileID: 4900000, guid: 03631f2d5a5a62741846c16af2dd3b32, type: 3}
+  signage:
+    building: mvr
+    level: T
+    information:
+    - id: 1
+      x: 65.09985
+      y: -13.035968
+      z: 1.46
+      sign:
+      - room: map
+        direction: partial
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 2
+      x: 65.100395
+      y: -10.502516
+      z: 1.46
+      sign:
+      - room: 101
+        direction: l
+      - room: T07-T33
+        direction: r
+      - room: T13
+        direction: r
+      - room: T23
+        direction: r
+      - room: T14
+        direction: r
+      - room: T20
+        direction: r
+      - room: T07
+        direction: r
+      - room: T35-T70
+        direction: d
+      - room: T56A
+        direction: d
+      - room: T57
+        direction: d
+      - room: T70
+        direction: d
+      - room: Commons
+        direction: d
+      - room: restroom
+        direction: d
+      - room: elevator
+        direction: d
+      - room: T71-T421
+        direction: d
+      - room: Express
+        direction: d
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 3
+      x: 104.696014
+      y: -12.942385
+      z: 1.46
+      sign:
+      - room: T01-T23
+        direction: l
+      - room: T13
+        direction: l
+      - room: T23
+        direction: l
+      - room: T14
+        direction: l
+      - room: T20
+        direction: l
+      - room: T07
+        direction: l
+      - room: T01
+        direction: l
+      - room: T31-T70
+        direction: r
+      - room: T56A
+        direction: r
+      - room: T57
+        direction: r
+      - room: T70
+        direction: r
+      - room: elevator
+        direction: r
+      - room: restroom
+        direction: r
+      - room: Commons
+        direction: r
+      - room: T71-T421
+        direction: r
+      - room: Express
+        direction: r
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 4
+      x: 70.49409
+      y: -34.29742
+      z: 1.46
+      sign:
+      - room: map
+        direction: limited
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 5
+      x: 65.2795
+      y: -29.396986
+      z: 1.46
+      sign:
+      - room: T01-T23
+        direction: lu
+      - room: T13
+        direction: lu
+      - room: T23
+        direction: lu
+      - room: T14
+        direction: lu
+      - room: T20
+        direction: lu
+      - room: T07
+        direction: lu
+      - room: T01
+        direction: lu
+      - room: elevator
+        direction: lu
+      - room: T31-T57
+        direction: r
+      - room: T56A
+        direction: r
+      - room: T57
+        direction: r
+      - room: restroom
+        direction: r
+      - room: T70
+        direction: d
+      - room: Commons
+        direction: d
+      - room: T71-T421
+        direction: d
+      - room: Express
+        direction: d
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 6
+      x: 62.255455
+      y: -35.73636
+      z: 1.46
+      sign:
+      - room: MVR_WEST
+        direction: l
+      - room: HEB
+        direction: u
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 7
+      x: 62.255455
+      y: -38.566166
+      z: 1.46
+      sign:
+      - room: MVR
+        direction: u
+      - room: MVR_WEST
+        direction: r
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 8
+      x: 31.227858
+      y: -47.913177
+      z: 1.46
+      sign:
+      - room: 1101-1106
+        direction: u2ft
+      - room: G151
+        direction: u1ft
+      - room: G155
+        direction: u1ft
+      - room: cafe
+        direction: r
+      - room: Commons
+        direction: r
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 9
+      x: 28.485945
+      y: -44.45627
+      z: 1.46
+      sign:
+      - room: 1101-1106
+        direction: u2ft
+      - room: G151
+        direction: u1ft
+      - room: G155
+        direction: u1ft
+      - room: cafe
+        direction: l
+      - room: Commons
+        direction: l
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 10
+      x: 28.485945
+      y: -37.512672
+      z: 1.46
+      sign:
+      - room: 1101-1106
+        direction: u2ft
+      - room: G151
+        direction: u1ft
+      - room: G155
+        direction: u1ft
+      - room: cafe
+        direction: l
+      - room: Commons
+        direction: l
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 11
+      x: 31.623243
+      y: -35.879604
+      z: 1.46
+      sign:
+      - room: 1101-1106
+        direction: u2ft
+      - room: G151
+        direction: u1ft
+      - room: G155
+        direction: u1ft
+      - room: cafe
+        direction: r
+      - room: Commons
+        direction: r
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 12
+      x: 25.916054
+      y: -52.546288
+      z: 1.46
+      sign:
+      - room: 1101-1106
+        direction: u2ft
+      - room: G151
+        direction: u1ft
+      - room: G155
+        direction: u1ft
+      - room: cafe
+        direction: l
+      - room: Commons
+        direction: l
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 13
+      x: 31.213923
+      y: -60.951195
+      z: 1.46
+      sign:
+      - room: 1101-1106
+        direction: u2ft
+      - room: G151
+        direction: u1ft
+      - room: G155
+        direction: u1ft
+      - room: cafe
+        direction: l
+      - room: Commons
+        direction: l
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 14
+      x: 31.136663
+      y: -70.01289
+      z: 1.46
+      sign:
+      - room: 1101-1159
+        direction: u2ft
+      - room: G151
+        direction: u1ft
+      - room: G155
+        direction: u1ft
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 15
+      x: 28.375929
+      y: -80.291466
+      z: 1.46
+      sign:
+      - room: 1101-1159
+        direction: u2ft
+      - room: G151
+        direction: u1ft
+      - room: G155
+        direction: u1ft
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 16
+      x: 35.689636
+      y: -80.84486
+      z: 1.46
+      sign:
+      - room: 1101-1159
+        direction: u2ft
+      - room: G151
+        direction: u1ft
+      - room: G155
+        direction: u1ft
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 17
+      x: 39.29193
+      y: -78.7504
+      z: 1.46
+      sign:
+      - room: cafe
+        direction: u
+      - room: Commons
+        direction: r
+      - room: 1101-1106
+        direction: u2ft
+      - room: G151
+        direction: u1ft
+      - room: G155
+        direction: u1ft
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 18
+      x: 39.892315
+      y: -81.228455
+      z: 1.46
+      sign:
+      - room: Commons
+        direction: l
+      - room: cafe
+        direction: b
+      - room: 1101-1106
+        direction: u2ft
+      - room: G151
+        direction: u1ft
+      - room: G155
+        direction: u1ft
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 19
+      x: 48.154003
+      y: -81.042366
+      z: 1.46
+      sign:
+      - room: T310A
+        direction: map
+      - room: T310B
+        direction: map
+      - room: T310
+        direction: map
+      - room: T310C
+        direction: map
+      - room: T320
+        direction: map
+      - room: T320A
+        direction: map
+      - room: T320C
+        direction: map
+      - room: T320B
+        direction: map
+      - room: T3063
+        direction: map
+      - room: T3064
+        direction: map
+      - room: T3062
+        direction: map
+      - room: T3061
+        direction: map
+      - room: T3060
+        direction: map
+      - room: T321
+        direction: map
+      - room: T2064
+        direction: map
+      - room: T237
+        direction: map
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 20
+      x: 91.9899
+      y: -80.98703
+      z: 1.46
+      sign:
+      - room: map
+        direction: zone
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 21
+      x: 101.066635
+      y: -72.67538
+      z: 1.46
+      sign:
+      - room: T411
+        direction: u
+      - room: restroom
+        direction: u
+      - room: elevator
+        direction: r
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 22
+      x: 103.54928
+      y: -72.67478
+      z: 1.46
+      sign:
+      - room: G422
+        direction: u
+      - room: DEA
+        direction: u
+      - room: Human Development
+        direction: u
+      - room: Human Resources
+        direction: u
+      - room: Computer Services Group
+        direction: l
+      - room: Facilities
+        direction: l
+      - room: College Administration
+        direction: u
+      - room: Conference Room 1300H
+        direction: u
+      - room: Conference Room 3308
+        direction: u
+      - room: MRI Facilities
+        direction: u
+      - room: Human Neuroscience Institute
+        direction: u
+      - room: Office of the Dean
+        direction: u
+      - room: Sloan Program in the Health Administration
+        direction: u
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 23
+      x: 116.190475
+      y: -73.717155
+      z: 1.46
+      sign:
+      - room: T411
+        direction: u
+      - room: restroom
+        direction: u
+      - room: T411
+        direction: d
+      - room: elevator
+        direction: r
+      size:
+        width: 0.4
+        height: 0.6
+    - id: 24
+      x: 99.93825
+      y: -70.88377
+      z: 1.46
+      sign:
+      - room: Design Studios
+        direction: 4
+      - room: 3M402
+        direction: 3M
+      - room: 3301
+        direction: 3M
+      - room: 3250
+        direction: 3M
+      - room: 3411-3429
+        direction: 3
+      - room: 2301
+        direction: 2
+      - room: 2411-2429
+        direction: 2
+      - room: 1300
+        direction: 1
+      - room: 1301
+        direction: 1
+      - room: 1411
+        direction: 1
+      - room: G411
+        direction: g
+      - room: G301
+        direction: g
+      - room: G421
+        direction: g
+      - room: G331
+        direction: g
+      - room: G341
+        direction: g
+      - room: T421
+        direction: t
+      - room: T411
+        direction: t
+      - room: Commons
+        direction: t
+      - room: cafe
+        direction: t
+      - room: lecture halls
+        direction: t
+      - room: lounge
+        direction: t
+      size:
+        width: 0.4
+        height: 0.6
